@@ -1,42 +1,46 @@
+# Getting Started with Create React App
 
-# React Functional Component Library
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A 'plug and play' react functional component library to reduce programming time by handling state management. 
+## Available Scripts
 
-This is currently just a passion project of mine to get into the world of open source development. I am making functional components and uses based on my own personal experience to help developers bring react code into production faster.  
+In the project directory, you can run:
 
-Have feature requests/questions? Feel free to message me on [LinkedIn](https://www.linkedin.com/in/brendan-young-357a8720b/)! I will try to get back to you
-## FormBuilder
+### `npm start`
 
-FormBuilder is a functional component that handles state management of an interfaced object and generates a form field to use while also handling the state management of the class.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Roadmap
+### `npm test`
 
-#### FormBuilder:
-- Ability to hook up to CRUD based endpoints.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Callback function on submission to update or refresh a list of entities.
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-#### FormFields:
-- Change out specific data types/interfaces with your own custom form fields
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Create/define custom component fields & layouts 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-#### CRUDEngine:
-- TBD / Designed
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Authors
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- [@BrendanMYoung](https://github.com/BrendanMYoung)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Licenses
+## Learn More
 
-This should hopefully be opensourced for the forseeable future!
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-
+To learn React, check out the [React documentation](https://reactjs.org/).
