@@ -1,4 +1,5 @@
-import { ReactNode, useState } from "react"
+import React from "react";
+import { ReactNode, useMemo, useState } from "react"
 
 function FieldState(initalValue: any) {
     var [object, setObject] = useState(initalValue)
@@ -8,7 +9,7 @@ function FieldState(initalValue: any) {
 /*
     Dynamically builds state management of a given interface.
 */
-function StateBuilder(testEntity: any) {
+function FormBuilder(testEntity: any) {
     
     const [object, setObject] = useState(testEntity);
 
@@ -17,16 +18,9 @@ function StateBuilder(testEntity: any) {
         setObject({ ...object, [name]: value });
     }
 
-
     function getField(element: any) {
         var name = element[0]
         var t = typeof(element[1])
-        var value = element[1]
-        console.log(t)
-        if (Array.isArray(value)) {
-            console.log(value)
-
-        }
         return (
             <>
                 <a>{name}</a>          
@@ -34,18 +28,17 @@ function StateBuilder(testEntity: any) {
             </>
         )
     }
+
     function getFields(): ReactNode {
         var fields = Object.entries(object)
-
         var fmap = fields.map(element => {
             return getField(element)
         })
-
         return fmap
     }
 
     return {object, setObject, handleChange, getFields};
 }
   
-export default StateBuilder;
+export default FormBuilder;
   

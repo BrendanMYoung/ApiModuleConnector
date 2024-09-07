@@ -32,6 +32,18 @@ export interface IShowFields {
     showNumber: number;
     playing: boolean;
 }
+export interface IShowFieldsStates {
+    title: string;
+    setTitle: any;
+    description: string;
+    setDescription: any;
+    showNumber: number;
+    setShowNumber: any;
+    playing: boolean;
+    setPlaying: any;
+}
+
+
 export class Show implements IShowFields, IEntity{
     title: string;
     description: string;
