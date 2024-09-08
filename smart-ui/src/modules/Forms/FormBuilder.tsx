@@ -1,17 +1,20 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import { ReactNode, useMemo, useState } from "react"
+import FormTextField from "./FormFields/FormTextField";
 
 function FieldState(initalValue: any) {
     var [object, setObject] = useState(initalValue)
 
     return {object, setObject}
 }
+
 /*
     Dynamically builds state management of a given interface.
 */
 function FormBuilder(testEntity: any) {
-    
     const [object, setObject] = useState(testEntity);
+
+    console.log(object)
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
@@ -21,6 +24,15 @@ function FormBuilder(testEntity: any) {
     function getField(element: any) {
         var name = element[0]
         var t = typeof(element[1])
+
+        return (
+            <FormTextField 
+                name={name}
+                label={name}
+                value={object[name]}
+                onChange={handleChange}
+            />
+        )
         return (
             <>
                 <a>{name}</a>          

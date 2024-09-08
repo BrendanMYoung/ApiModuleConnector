@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FormBuilder from './modules/FormBuilder';
+import FormBuilder from './modules/Forms/FormBuilder';
 import {  IShowFieldsStates, ShowFields } from './modules/IEntity';
 import AutoStateBuilder from './modules/AutoStateBuilder';
 
