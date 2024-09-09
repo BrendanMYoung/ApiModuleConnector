@@ -1,29 +1,41 @@
 
-# React Functional Component Library
+# React Functional Component Library - V0.0.1
 
-A 'plug and play' react functional component library to reduce programming time by handling state management. 
+Define an interface & re-use forever!
 
-This is currently just a passion project of mine to get into the world of open source development. I am making functional components and uses based on my own personal experience to help developers bring react code into production faster.  
+A 'plug and play' react functional component library to reduce programming time by handling server-sided state management for a given interface.
+
+This is currently just a passion project of mine to get into the world of open source development, and become a better developer in the process. I am making functional components based on my own personal experience to help myself & others bring react code to production faster. Aka spend more time on layouts than managing your state!
+
+Why build this?
+I often found more component-based libraries for react and had to often craft my own solutions for managing state. This project is a combination of my ambition and expertise within React to build a project 
 
 Have feature requests/questions? Feel free to message me on [LinkedIn](https://www.linkedin.com/in/brendan-young-357a8720b/)! I will try to get back to you
+
 ## FormBuilder
 
-FormBuilder is a functional component that handles state management of an interfaced object and generates a form field to use while also handling the state management of the class.
+FormBuilder is a functional component that handles ALL state management of an interfaced object.
 
+It will generate a form field that you can use to create or edit an object! Will also have the ability to hook up to create and update endpoints 
+
+It is must useful for in-line or modal/dialog based creation of objects. 
 
 
 ## Roadmap
 
 #### FormBuilder:
-- Ability to hook up to CRUD based endpoints.
+- Hook up to CRUD based endpoints for creation, deletion, and update of a given interface
 
 - Callback function on submission to update or refresh a list of entities.
 
+- Custom layouts ??
 
-#### FormFields - TBD
-- Change out specific data types/interfaces with your own custom form fields
+#### FormFields
+- Support for date pickers, multi select, select,
 
-- Create/define custom component fields & layouts 
+- Server sided rendering options
+
+- Create/define custom FormFields that are configurable for complex-nested objects 
 
 
 #### CRUDEngine - TBD
@@ -36,7 +48,6 @@ FormBuilder is a functional component that handles state management of an interf
 ## Authors
 
 - [@BrendanMYoung](https://github.com/BrendanMYoung)
-
 
 ## Licenses
 
