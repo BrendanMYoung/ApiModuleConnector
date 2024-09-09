@@ -1,12 +1,7 @@
 import React, { ChangeEvent } from "react";
 import { ReactNode, useMemo, useState } from "react"
 import FormTextField from "./FormFields/FormTextField";
-
-function FieldState(initalValue: any) {
-    var [object, setObject] = useState(initalValue)
-
-    return {object, setObject}
-}
+import DefaultFormMapper from "./DefaultFormMapper";
 
 /*
     Dynamically builds state management of a given interface.
@@ -14,7 +9,7 @@ function FieldState(initalValue: any) {
 function FormBuilder(testEntity: any) {
     const [object, setObject] = useState(testEntity);
 
-    console.log(object)
+    var mapper = DefaultFormMapper(null)
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
@@ -24,15 +19,15 @@ function FormBuilder(testEntity: any) {
     function getField(element: any) {
         var name = element[0]
         var t = typeof(element[1])
-
-        return (
-            <FormTextField 
-                name={name}
-                label={name}
-                value={object[name]}
-                onChange={handleChange}
-            />
-        )
+        console.log(t)
+        var formField = mapper.defaultBuildField({
+            label: name, 
+            value: object[name], 
+            onChange: handleChange, 
+            overideEntity: null, 
+            name: name
+        }, t)
+        return (formField )
         return (
             <>
                 <a>{name}</a>          

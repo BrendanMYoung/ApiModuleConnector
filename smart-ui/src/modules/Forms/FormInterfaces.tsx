@@ -6,7 +6,7 @@ export interface IFormFieldProps {
     name: string;
     label?: string | null;
     type?: any | null;
-    overideEntity?: React.FC ;
+    overideEntity?: React.FC | null;
 }
 
 export interface IFormBuilderProps {
